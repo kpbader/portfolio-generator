@@ -1,13 +1,6 @@
-const fs = require('fs');
-const generatePage = require('./src/page-template');
-
-const profileDataArgs = process.argv.slice(2);
-
-console.log(profileDataArgs);
-
-const [name, github] = profileDataArgs;
-
-console.log(name, github);
+const inquirer = require('inquirer')
+// const fs = require('fs');
+// const generatePage = require('./src/page-template');
 
 const pageHTML = generatePage(name, github);
 
